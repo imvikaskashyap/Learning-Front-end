@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+      }
+      .small {
+        width: 150px;
+        height: 150px;
+        background-color: chocolate;
+        animation: demo 2s forwards infinite;
+        position: relative;
+      }
+
+      @keyframes demo {
+        0% {
+          background-color: black;
+          left: 0px;
+          top: 0;
+        }
+        25% {
+          background-color: yellow;
+          left: 70%;
+          top: 0;
+        }
+        50% {
+          background-color: rgb(161, 20, 20);
+          left: 70%;
+          top: 70%;
+        }
+        75% {
+          background-color: rgb(214, 31, 147);
+          left: 0px;
+          top: 70%;
+        }
+        100% {
+          background-color: rgb(31, 40, 214);
+          left: 0px;
+          top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="small"></div>
+    </div>
+  </body>
+</html>

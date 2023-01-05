@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 209, 209);
+  margin: 0;
+}
+
+.container {
+  padding: 12px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+}
+
+.container > input {
+  width: 60px;
+  padding: 4px;
+  text-align: center;
+  outline-width: 0;
+}
